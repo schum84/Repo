@@ -17,7 +17,7 @@ namespace UnitTestProject3
             driver.Manage().Window.Maximize(); // maksymalizacja okna
             driver.Navigate().GoToUrl("http://google.pl");  //przejdz do adresu
             IWebElement searchbox = driver.FindElement(By.Name("q"));  //znalezienie okna wyszukiwarki
-            searchbox.SendKeys("hey"); // wpisanie w wyszukiwarce tekstu
+            searchbox.SendKeys("heya"); // wpisanie w wyszukiwarce tekstu
             IWebElement submit = driver.FindElement(By.Name("btnK")); // znalezieniu przycisku wyslij
             submit.Click(); //klikniecie przycisku
         }
