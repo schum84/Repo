@@ -14,7 +14,7 @@ public class Test {
         driver.manage().window().maximize(); //maksymalizacja okna przegladarki
         driver.get("http://www.google.com"); //przejscie do urla
         driver.findElement(By.name("q")).sendKeys("test"); //znalezienie elementu po nazwie i wpisanie slowa
-        WebElement click; //deklaracja elementu
+        WebElement click; //deklaracja element
         click = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("btnK"))); //czekanie na pojawienie sie elementu
         driver.findElement(By.name("btnK")).click();
     }
